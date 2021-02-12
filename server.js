@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 // Sets Server 3000 to PORT
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Sets Express connection to "app"
 const app = express();
